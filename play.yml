@@ -1,0 +1,41 @@
+---
+
+- hosts: localhost
+  connection: localhost
+
+
+  tasks:
+
+    - name: Install apache httpd
+      apt:
+        name: apache2
+    
+    - name: Install Java 11 
+      apt:
+        name: openjdk-11-jdk
+    
+    - name: Install VIM
+      apt: 
+        name: vim
+    
+    
+    - name: Install Docker
+      command: sudo apt install  
+      command: sudo apt install apt-transport-https
+      command: sudo apt install software-properties-common
+      command: sudo apt install ca-certificates 
+      command: sudo apt install curl
+      command: sudo apt install gnupg-agent
+
+    - name : Install Git
+      apt: 
+        name: git
+    
+    - name: Install Asciinema
+      apt: 
+        name: asciinema 
+    
+    - name: Install Jinja2
+      command: sudo apt install -y python-jinja2
+    
+    
